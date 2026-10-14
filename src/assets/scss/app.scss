@@ -1,0 +1,32 @@
+@import "bootstrap/scss/bootstrap";
+@import "layout";
+
+:root,
+[data-bs-theme=light] {
+    /* backgroud colors*/
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    --bs-light: #f8f9fa;
+    --bs-header-bg: #fff;
+    --bs-secondary-color: #6b6375;
+}
+
+[data-bs-theme=dark] {
+    --bs-body-color: #fff;
+    --bs-body-bg: #2A3042;
+    --bs-light: #222736;
+    --bs-header-bg: #2a3042; 
+    --bs-secondary-color: #c3cbe4;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    background-color: var(--bs-body-bg);
+}
